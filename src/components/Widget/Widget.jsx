@@ -45,7 +45,7 @@ export class Widget extends Component {
           <FeedbackOptions
             options={buttons}
             onLeaveFeedback={this.onFeedbackIncrement}
-          ></FeedbackOptions>
+          />
         </Section>
         {this.countTotalFeedback() === 0 ? (
           <Notification message="There is no feedback" />
@@ -57,7 +57,7 @@ export class Widget extends Component {
               bad={bad}
               total={total}
               positivePercentage={positivePercentage}
-            ></Statistics>
+            />
           </Section>
         )}
       </Wrapper>
